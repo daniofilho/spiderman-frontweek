@@ -1,11 +1,8 @@
 import React from 'react';
 
-import logoSpiderman from 'svg/logo-spiderman.svg';
+import { LogoSpiderman } from 'assets';
 
-import iconTwitter from 'svg/icon-twitter.svg';
-import iconFacebook from 'svg/icon-facebook.svg';
-import iconInstagram from 'svg/icon-instagram.svg';
-import iconYoutube from 'svg/icon-youtube.svg';
+import { IconTwitter, IconFacebook, IconInstagram, IconYoutube } from 'assets';
 
 import { Container } from './styles';
 
@@ -21,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ refLogo, refNavList, refNavSocial }) =>
       <nav className="navbar">
         <div className="nav-menu">
           <div className="logo" ref={refLogo}>
-            <img src={logoSpiderman} alt="Logo" />
+            <LogoSpiderman />
           </div>
 
           <ul className="nav-list" ref={refNavList}>
@@ -49,10 +46,10 @@ const Header: React.FC<HeaderProps> = ({ refLogo, refNavList, refNavSocial }) =>
         </div>
 
         <div className="nav-social" ref={refNavSocial}>
-          <img src={iconFacebook} alt="Facebook" />
-          <img src={iconInstagram} alt="Instagram" />
-          <img src={iconYoutube} alt="Youtube" />
-          <img src={iconTwitter} alt="Twitter" />
+          <IconFacebook />
+          <IconInstagram />
+          <IconYoutube />
+          <IconTwitter />
         </div>
       </nav>
     </Container>

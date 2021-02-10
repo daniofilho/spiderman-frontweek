@@ -5,6 +5,8 @@ import GoogleFonts from 'next-google-fonts';
 
 import GlobalStyle from 'styles/global';
 
+import favicon from 'assets/favicon.png';
+
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
@@ -17,7 +19,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <meta name="MobileOptimized" content="320" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
+        <link rel="shortcut icon" type="image/png" href={favicon} />
       </Head>
 
       <Component {...pageProps} />

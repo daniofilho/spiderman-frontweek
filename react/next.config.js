@@ -2,16 +2,9 @@
 const withImages = require('next-images');
 
 module.exports = withImages({
+  basePath: process.env.NODE_ENV === 'production' ? '/estudo/spiderman-frontweek/react' : '',
   compress: true,
   devIndicators: {
     autoPrerender: false,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-      },
-    ],
   },
 });

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { fadeIndrawIn } from 'styles/common/animations';
+
 import colors from 'styles/common/colors';
 
 export const Container = styled.header`
@@ -21,8 +23,13 @@ export const Container = styled.header`
     align-items: center;
   }
 
-  .logo img {
+  .logo svg {
     width: 88px;
+
+    path {
+      animation: ${fadeIndrawIn} 12s ease infinite alternate;
+      animation-delay: 6s;
+    }
   }
 
   .nav-list {

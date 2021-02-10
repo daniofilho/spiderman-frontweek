@@ -2,8 +2,7 @@ import React from 'react';
 
 import Tilt from 'react-parallax-tilt';
 
-import iconPS from 'svg/ps.svg';
-import iconMarvel from 'svg/marvel.svg';
+import { IconMarvel, IconPS } from 'assets';
 
 import { Container } from './styles';
 
@@ -40,8 +39,12 @@ const Content: React.FC<ContentProps> = ({ refItem1, refItem2, refItem3, refItem
         </div>
 
         <div className="flex align-items-center mt-2" ref={refItem4}>
-          <img src={iconPS} className="w-auto" alt="Playstation" />
-          <img src={iconMarvel} className="ml-2 w-auto" alt="Marvel" />
+          <div className="w-auto">
+            <IconPS />
+          </div>
+          <div className="ml-2 w-auto">
+            <IconMarvel />
+          </div>
         </div>
       </div>
 

@@ -1,25 +1,8 @@
 import styled from 'styled-components';
-import { keyframes } from 'styled-components';
 
 import colors from 'styles/common/colors';
 
-const logoSpiderman = keyframes`
-  0% {
-    stroke-width: 0;
-    stroke-dasharray: 1 100;
-    fill: transparent;
-  }
-  25% {
-    stroke-width: 0.3;
-    stroke-dasharray: 100 0;
-    fill: transparent;
-  }
-  60%,
-  100% {
-    stroke-width: 0;
-    fill: ${colors.whiteDark};
-  }
-`;
+import { fadeIndrawIn } from 'styles/common/animations';
 
 export const Container = styled.div`
   width: 100%;
@@ -45,7 +28,7 @@ export const Container = styled.div`
     fill: transparent;
     transition: 0.7s ease;
 
-    animation: ${logoSpiderman} 12s ease infinite alternate;
+    animation: ${fadeIndrawIn} 12s ease infinite alternate;
   }
 
   .logo {
