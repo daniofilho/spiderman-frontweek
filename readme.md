@@ -1,7 +1,9 @@
 # Spider Man - Front Week
 
-Curso ministrado por Násser Yousef Ali.
+Curso ministrado por Násser Yousef Ali:
 
-[Versão HTML](https://daniofilho.com.br/estudo/spiderman-frontweek)
+[DEMO](https://daniofilho.com.br/estudo/spiderman-frontweek)
 
-[Versão React](https://spiderman-frontweek.vercel.app)
+Versão desenvolvida em React(NextJS) com base no projeto do curso:
+
+[DEMO](https://daniofilho.com.br/estudo/spiderman-frontweek/react/)
